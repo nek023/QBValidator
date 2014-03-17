@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA4039C118D5F4DB008C232A /* QBValidationComparisonRule.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4039A818D5F4DB008C232A /* QBValidationComparisonRule.m */; };
+		AA4039C218D5F4DB008C232A /* QBValidationConditionRule.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4039AA18D5F4DB008C232A /* QBValidationConditionRule.m */; };
+		AA4039C318D5F4DB008C232A /* QBValidationContainmentRule.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4039AC18D5F4DB008C232A /* QBValidationContainmentRule.m */; };
+		AA4039C418D5F4DB008C232A /* QBValidationNegativeRule.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4039AE18D5F4DB008C232A /* QBValidationNegativeRule.m */; };
+		AA4039C518D5F4DB008C232A /* QBValidationPatternRule.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4039B018D5F4DB008C232A /* QBValidationPatternRule.m */; };
+		AA4039C618D5F4DB008C232A /* QBValidationRangeRule.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4039B218D5F4DB008C232A /* QBValidationRangeRule.m */; };
+		AA4039C718D5F4DB008C232A /* QBValidationRegularExpressionRule.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4039B418D5F4DB008C232A /* QBValidationRegularExpressionRule.m */; };
+		AA4039C818D5F4DB008C232A /* QBValidationRequirementRule.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4039B618D5F4DB008C232A /* QBValidationRequirementRule.m */; };
+		AA4039C918D5F4DB008C232A /* QBValidationRule.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4039B818D5F4DB008C232A /* QBValidationRule.m */; };
+		AA4039CA18D5F4DB008C232A /* QBValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4039BB18D5F4DB008C232A /* QBValidator.m */; };
+		AA4039CB18D5F4DB008C232A /* QBValidator.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA4039BD18D5F4DB008C232A /* QBValidator.strings */; };
+		AA4039CC18D5F4DB008C232A /* UITextField+QBValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4039C018D5F4DB008C232A /* UITextField+QBValidator.m */; };
+		AAC4B0BE18D47AC600A7AF51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC4B0BD18D47AC600A7AF51 /* Foundation.framework */; };
+		AAC4B0C018D47AC600A7AF51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC4B0BF18D47AC600A7AF51 /* CoreGraphics.framework */; };
+		AAC4B0C218D47AC600A7AF51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC4B0C118D47AC600A7AF51 /* UIKit.framework */; };
+		AAC4B0C818D47AC600A7AF51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAC4B0C618D47AC600A7AF51 /* InfoPlist.strings */; };
+		AAC4B0CA18D47AC600A7AF51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC4B0C918D47AC600A7AF51 /* main.m */; };
+		AAC4B0CE18D47AC600A7AF51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC4B0CD18D47AC600A7AF51 /* AppDelegate.m */; };
+		AAC4B0D118D47AC600A7AF51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC4B0CF18D47AC600A7AF51 /* Main.storyboard */; };
+		AAC4B0D418D47AC600A7AF51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC4B0D318D47AC600A7AF51 /* ViewController.m */; };
+		AAC4B0D618D47AC600A7AF51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAC4B0D518D47AC600A7AF51 /* Images.xcassets */; };
+		AAC4B0DD18D47AC600A7AF51 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC4B0DC18D47AC600A7AF51 /* XCTest.framework */; };
+		AAC4B0DE18D47AC600A7AF51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC4B0BD18D47AC600A7AF51 /* Foundation.framework */; };
+		AAC4B0DF18D47AC600A7AF51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC4B0C118D47AC600A7AF51 /* UIKit.framework */; };
+		AAC4B0E718D47AC700A7AF51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAC4B0E518D47AC700A7AF51 /* InfoPlist.strings */; };
+		AAC4B15918D4B0EA00A7AF51 /* QBValidationRequirementRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC4B15818D4B0EA00A7AF51 /* QBValidationRequirementRuleTests.m */; };
+		AAC4B15F18D4BED800A7AF51 /* QBValidationRangeRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC4B15E18D4BED800A7AF51 /* QBValidationRangeRuleTests.m */; };
+		AAC4B16118D4BF5F00A7AF51 /* QBValidationContainmentRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC4B16018D4BF5F00A7AF51 /* QBValidationContainmentRuleTests.m */; };
+		AAC4B16318D4C09E00A7AF51 /* QBValidationNegativeRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC4B16218D4C09E00A7AF51 /* QBValidationNegativeRuleTests.m */; };
+		AAC4B16818D4C62500A7AF51 /* QBValidationComparisonRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC4B16718D4C62500A7AF51 /* QBValidationComparisonRuleTests.m */; };
+		AAC4B16D18D4CDA300A7AF51 /* QBValidationConditionRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC4B16C18D4CDA300A7AF51 /* QBValidationConditionRuleTests.m */; };
+		AAC4B17218D57B0900A7AF51 /* QBValidationRegularExpressionRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC4B17118D57B0900A7AF51 /* QBValidationRegularExpressionRuleTests.m */; };
+		AAC6251C18D5EB0B009B6437 /* QBValidationPatternRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC6251B18D5EB0B009B6437 /* QBValidationPatternRuleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAC4B0E018D47AC600A7AF51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAC4B0B218D47AC600A7AF51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAC4B0B918D47AC600A7AF51;
+			remoteInfo = QBValidatorDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA4039A718D5F4DB008C232A /* QBValidationComparisonRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBValidationComparisonRule.h; sourceTree = "<group>"; };
+		AA4039A818D5F4DB008C232A /* QBValidationComparisonRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationComparisonRule.m; sourceTree = "<group>"; };
+		AA4039A918D5F4DB008C232A /* QBValidationConditionRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBValidationConditionRule.h; sourceTree = "<group>"; };
+		AA4039AA18D5F4DB008C232A /* QBValidationConditionRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationConditionRule.m; sourceTree = "<group>"; };
+		AA4039AB18D5F4DB008C232A /* QBValidationContainmentRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBValidationContainmentRule.h; sourceTree = "<group>"; };
+		AA4039AC18D5F4DB008C232A /* QBValidationContainmentRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationContainmentRule.m; sourceTree = "<group>"; };
+		AA4039AD18D5F4DB008C232A /* QBValidationNegativeRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBValidationNegativeRule.h; sourceTree = "<group>"; };
+		AA4039AE18D5F4DB008C232A /* QBValidationNegativeRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationNegativeRule.m; sourceTree = "<group>"; };
+		AA4039AF18D5F4DB008C232A /* QBValidationPatternRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBValidationPatternRule.h; sourceTree = "<group>"; };
+		AA4039B018D5F4DB008C232A /* QBValidationPatternRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationPatternRule.m; sourceTree = "<group>"; };
+		AA4039B118D5F4DB008C232A /* QBValidationRangeRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBValidationRangeRule.h; sourceTree = "<group>"; };
+		AA4039B218D5F4DB008C232A /* QBValidationRangeRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationRangeRule.m; sourceTree = "<group>"; };
+		AA4039B318D5F4DB008C232A /* QBValidationRegularExpressionRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBValidationRegularExpressionRule.h; sourceTree = "<group>"; };
+		AA4039B418D5F4DB008C232A /* QBValidationRegularExpressionRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationRegularExpressionRule.m; sourceTree = "<group>"; };
+		AA4039B518D5F4DB008C232A /* QBValidationRequirementRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBValidationRequirementRule.h; sourceTree = "<group>"; };
+		AA4039B618D5F4DB008C232A /* QBValidationRequirementRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationRequirementRule.m; sourceTree = "<group>"; };
+		AA4039B718D5F4DB008C232A /* QBValidationRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBValidationRule.h; sourceTree = "<group>"; };
+		AA4039B818D5F4DB008C232A /* QBValidationRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationRule.m; sourceTree = "<group>"; };
+		AA4039B918D5F4DB008C232A /* QBValidationRuleFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBValidationRuleFunctions.h; sourceTree = "<group>"; };
+		AA4039BA18D5F4DB008C232A /* QBValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBValidator.h; sourceTree = "<group>"; };
+		AA4039BB18D5F4DB008C232A /* QBValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidator.m; sourceTree = "<group>"; };
+		AA4039BE18D5F4DB008C232A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/QBValidator.strings; sourceTree = "<group>"; };
+		AA4039BF18D5F4DB008C232A /* UITextField+QBValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+QBValidator.h"; sourceTree = "<group>"; };
+		AA4039C018D5F4DB008C232A /* UITextField+QBValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+QBValidator.m"; sourceTree = "<group>"; };
+		AAC4B0BA18D47AC600A7AF51 /* QBValidatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBValidatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC4B0BD18D47AC600A7AF51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AAC4B0BF18D47AC600A7AF51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AAC4B0C118D47AC600A7AF51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AAC4B0C518D47AC600A7AF51 /* QBValidatorDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QBValidatorDemo-Info.plist"; sourceTree = "<group>"; };
+		AAC4B0C718D47AC600A7AF51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AAC4B0C918D47AC600A7AF51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AAC4B0CB18D47AC600A7AF51 /* QBValidatorDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QBValidatorDemo-Prefix.pch"; sourceTree = "<group>"; };
+		AAC4B0CC18D47AC600A7AF51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AAC4B0CD18D47AC600A7AF51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AAC4B0D018D47AC600A7AF51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAC4B0D218D47AC600A7AF51 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AAC4B0D318D47AC600A7AF51 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AAC4B0D518D47AC600A7AF51 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AAC4B0DB18D47AC600A7AF51 /* QBValidatorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QBValidatorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC4B0DC18D47AC600A7AF51 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AAC4B0E418D47AC600A7AF51 /* QBValidatorDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QBValidatorDemoTests-Info.plist"; sourceTree = "<group>"; };
+		AAC4B0E618D47AC700A7AF51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AAC4B15818D4B0EA00A7AF51 /* QBValidationRequirementRuleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationRequirementRuleTests.m; sourceTree = "<group>"; };
+		AAC4B15E18D4BED800A7AF51 /* QBValidationRangeRuleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationRangeRuleTests.m; sourceTree = "<group>"; };
+		AAC4B16018D4BF5F00A7AF51 /* QBValidationContainmentRuleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationContainmentRuleTests.m; sourceTree = "<group>"; };
+		AAC4B16218D4C09E00A7AF51 /* QBValidationNegativeRuleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationNegativeRuleTests.m; sourceTree = "<group>"; };
+		AAC4B16718D4C62500A7AF51 /* QBValidationComparisonRuleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationComparisonRuleTests.m; sourceTree = "<group>"; };
+		AAC4B16C18D4CDA300A7AF51 /* QBValidationConditionRuleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationConditionRuleTests.m; sourceTree = "<group>"; };
+		AAC4B17118D57B0900A7AF51 /* QBValidationRegularExpressionRuleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationRegularExpressionRuleTests.m; sourceTree = "<group>"; };
+		AAC6251B18D5EB0B009B6437 /* QBValidationPatternRuleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationPatternRuleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAC4B0B718D47AC600A7AF51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC4B0C018D47AC600A7AF51 /* CoreGraphics.framework in Frameworks */,
+				AAC4B0C218D47AC600A7AF51 /* UIKit.framework in Frameworks */,
+				AAC4B0BE18D47AC600A7AF51 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC4B0D818D47AC600A7AF51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC4B0DD18D47AC600A7AF51 /* XCTest.framework in Frameworks */,
+				AAC4B0DF18D47AC600A7AF51 /* UIKit.framework in Frameworks */,
+				AAC4B0DE18D47AC600A7AF51 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA4039A618D5F4DB008C232A /* QBValidator */ = {
+			isa = PBXGroup;
+			children = (
+				AA4039BA18D5F4DB008C232A /* QBValidator.h */,
+				AA4039BB18D5F4DB008C232A /* QBValidator.m */,
+				AA4039B918D5F4DB008C232A /* QBValidationRuleFunctions.h */,
+				AA4039BF18D5F4DB008C232A /* UITextField+QBValidator.h */,
+				AA4039C018D5F4DB008C232A /* UITextField+QBValidator.m */,
+				AA4039CD18D5F4F8008C232A /* ValidationRules */,
+				AA4039BC18D5F4DB008C232A /* Resources */,
+			);
+			name = QBValidator;
+			path = ../../QBValidator;
+			sourceTree = "<group>";
+		};
+		AA4039BC18D5F4DB008C232A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA4039BD18D5F4DB008C232A /* QBValidator.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA4039CD18D5F4F8008C232A /* ValidationRules */ = {
+			isa = PBXGroup;
+			children = (
+				AA4039B718D5F4DB008C232A /* QBValidationRule.h */,
+				AA4039B818D5F4DB008C232A /* QBValidationRule.m */,
+				AA4039B518D5F4DB008C232A /* QBValidationRequirementRule.h */,
+				AA4039B618D5F4DB008C232A /* QBValidationRequirementRule.m */,
+				AA4039A718D5F4DB008C232A /* QBValidationComparisonRule.h */,
+				AA4039A818D5F4DB008C232A /* QBValidationComparisonRule.m */,
+				AA4039B118D5F4DB008C232A /* QBValidationRangeRule.h */,
+				AA4039B218D5F4DB008C232A /* QBValidationRangeRule.m */,
+				AA4039AB18D5F4DB008C232A /* QBValidationContainmentRule.h */,
+				AA4039AC18D5F4DB008C232A /* QBValidationContainmentRule.m */,
+				AA4039AD18D5F4DB008C232A /* QBValidationNegativeRule.h */,
+				AA4039AE18D5F4DB008C232A /* QBValidationNegativeRule.m */,
+				AA4039A918D5F4DB008C232A /* QBValidationConditionRule.h */,
+				AA4039AA18D5F4DB008C232A /* QBValidationConditionRule.m */,
+				AA4039B318D5F4DB008C232A /* QBValidationRegularExpressionRule.h */,
+				AA4039B418D5F4DB008C232A /* QBValidationRegularExpressionRule.m */,
+				AA4039AF18D5F4DB008C232A /* QBValidationPatternRule.h */,
+				AA4039B018D5F4DB008C232A /* QBValidationPatternRule.m */,
+			);
+			name = ValidationRules;
+			sourceTree = "<group>";
+		};
+		AAC4B0B118D47AC600A7AF51 = {
+			isa = PBXGroup;
+			children = (
+				AAC4B0C318D47AC600A7AF51 /* QBValidatorDemo */,
+				AAC4B0E218D47AC600A7AF51 /* QBValidatorDemoTests */,
+				AAC4B0BC18D47AC600A7AF51 /* Frameworks */,
+				AAC4B0BB18D47AC600A7AF51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAC4B0BB18D47AC600A7AF51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAC4B0BA18D47AC600A7AF51 /* QBValidatorDemo.app */,
+				AAC4B0DB18D47AC600A7AF51 /* QBValidatorDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAC4B0BC18D47AC600A7AF51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAC4B0BD18D47AC600A7AF51 /* Foundation.framework */,
+				AAC4B0BF18D47AC600A7AF51 /* CoreGraphics.framework */,
+				AAC4B0C118D47AC600A7AF51 /* UIKit.framework */,
+				AAC4B0DC18D47AC600A7AF51 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAC4B0C318D47AC600A7AF51 /* QBValidatorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AA4039A618D5F4DB008C232A /* QBValidator */,
+				AAC4B0CC18D47AC600A7AF51 /* AppDelegate.h */,
+				AAC4B0CD18D47AC600A7AF51 /* AppDelegate.m */,
+				AAC4B0D218D47AC600A7AF51 /* ViewController.h */,
+				AAC4B0D318D47AC600A7AF51 /* ViewController.m */,
+				AAC4B0F218D47B8500A7AF51 /* Resources */,
+				AAC4B0C418D47AC600A7AF51 /* Supporting Files */,
+			);
+			path = QBValidatorDemo;
+			sourceTree = "<group>";
+		};
+		AAC4B0C418D47AC600A7AF51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAC4B0C518D47AC600A7AF51 /* QBValidatorDemo-Info.plist */,
+				AAC4B0C618D47AC600A7AF51 /* InfoPlist.strings */,
+				AAC4B0C918D47AC600A7AF51 /* main.m */,
+				AAC4B0CB18D47AC600A7AF51 /* QBValidatorDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAC4B0E218D47AC600A7AF51 /* QBValidatorDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAC4B15818D4B0EA00A7AF51 /* QBValidationRequirementRuleTests.m */,
+				AAC4B16718D4C62500A7AF51 /* QBValidationComparisonRuleTests.m */,
+				AAC4B15E18D4BED800A7AF51 /* QBValidationRangeRuleTests.m */,
+				AAC4B16018D4BF5F00A7AF51 /* QBValidationContainmentRuleTests.m */,
+				AAC4B16218D4C09E00A7AF51 /* QBValidationNegativeRuleTests.m */,
+				AAC4B16C18D4CDA300A7AF51 /* QBValidationConditionRuleTests.m */,
+				AAC4B17118D57B0900A7AF51 /* QBValidationRegularExpressionRuleTests.m */,
+				AAC6251B18D5EB0B009B6437 /* QBValidationPatternRuleTests.m */,
+				AAC4B0E318D47AC600A7AF51 /* Supporting Files */,
+			);
+			path = QBValidatorDemoTests;
+			sourceTree = "<group>";
+		};
+		AAC4B0E318D47AC600A7AF51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAC4B0E418D47AC600A7AF51 /* QBValidatorDemoTests-Info.plist */,
+				AAC4B0E518D47AC700A7AF51 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAC4B0F218D47B8500A7AF51 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AAC4B0CF18D47AC600A7AF51 /* Main.storyboard */,
+				AAC4B0D518D47AC600A7AF51 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAC4B0B918D47AC600A7AF51 /* QBValidatorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAC4B0EC18D47AC700A7AF51 /* Build configuration list for PBXNativeTarget "QBValidatorDemo" */;
+			buildPhases = (
+				AAC4B0B618D47AC600A7AF51 /* Sources */,
+				AAC4B0B718D47AC600A7AF51 /* Frameworks */,
+				AAC4B0B818D47AC600A7AF51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QBValidatorDemo;
+			productName = QBValidatorDemo;
+			productReference = AAC4B0BA18D47AC600A7AF51 /* QBValidatorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAC4B0DA18D47AC600A7AF51 /* QBValidatorDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAC4B0EF18D47AC700A7AF51 /* Build configuration list for PBXNativeTarget "QBValidatorDemoTests" */;
+			buildPhases = (
+				AAC4B0D718D47AC600A7AF51 /* Sources */,
+				AAC4B0D818D47AC600A7AF51 /* Frameworks */,
+				AAC4B0D918D47AC600A7AF51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAC4B0E118D47AC600A7AF51 /* PBXTargetDependency */,
+			);
+			name = QBValidatorDemoTests;
+			productName = QBValidatorDemoTests;
+			productReference = AAC4B0DB18D47AC600A7AF51 /* QBValidatorDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAC4B0B218D47AC600A7AF51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Katsuma Tanaka";
+				TargetAttributes = {
+					AAC4B0DA18D47AC600A7AF51 = {
+						TestTargetID = AAC4B0B918D47AC600A7AF51;
+					};
+				};
+			};
+			buildConfigurationList = AAC4B0B518D47AC600A7AF51 /* Build configuration list for PBXProject "QBValidatorDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAC4B0B118D47AC600A7AF51;
+			productRefGroup = AAC4B0BB18D47AC600A7AF51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAC4B0B918D47AC600A7AF51 /* QBValidatorDemo */,
+				AAC4B0DA18D47AC600A7AF51 /* QBValidatorDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAC4B0B818D47AC600A7AF51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4039CB18D5F4DB008C232A /* QBValidator.strings in Resources */,
+				AAC4B0D618D47AC600A7AF51 /* Images.xcassets in Resources */,
+				AAC4B0C818D47AC600A7AF51 /* InfoPlist.strings in Resources */,
+				AAC4B0D118D47AC600A7AF51 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC4B0D918D47AC600A7AF51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC4B0E718D47AC700A7AF51 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAC4B0B618D47AC600A7AF51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4039C518D5F4DB008C232A /* QBValidationPatternRule.m in Sources */,
+				AA4039C118D5F4DB008C232A /* QBValidationComparisonRule.m in Sources */,
+				AA4039C218D5F4DB008C232A /* QBValidationConditionRule.m in Sources */,
+				AA4039C918D5F4DB008C232A /* QBValidationRule.m in Sources */,
+				AA4039C818D5F4DB008C232A /* QBValidationRequirementRule.m in Sources */,
+				AA4039C618D5F4DB008C232A /* QBValidationRangeRule.m in Sources */,
+				AA4039C318D5F4DB008C232A /* QBValidationContainmentRule.m in Sources */,
+				AA4039CC18D5F4DB008C232A /* UITextField+QBValidator.m in Sources */,
+				AAC4B0D418D47AC600A7AF51 /* ViewController.m in Sources */,
+				AA4039CA18D5F4DB008C232A /* QBValidator.m in Sources */,
+				AA4039C418D5F4DB008C232A /* QBValidationNegativeRule.m in Sources */,
+				AAC4B0CE18D47AC600A7AF51 /* AppDelegate.m in Sources */,
+				AA4039C718D5F4DB008C232A /* QBValidationRegularExpressionRule.m in Sources */,
+				AAC4B0CA18D47AC600A7AF51 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC4B0D718D47AC600A7AF51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC6251C18D5EB0B009B6437 /* QBValidationPatternRuleTests.m in Sources */,
+				AAC4B16318D4C09E00A7AF51 /* QBValidationNegativeRuleTests.m in Sources */,
+				AAC4B17218D57B0900A7AF51 /* QBValidationRegularExpressionRuleTests.m in Sources */,
+				AAC4B15F18D4BED800A7AF51 /* QBValidationRangeRuleTests.m in Sources */,
+				AAC4B15918D4B0EA00A7AF51 /* QBValidationRequirementRuleTests.m in Sources */,
+				AAC4B16118D4BF5F00A7AF51 /* QBValidationContainmentRuleTests.m in Sources */,
+				AAC4B16D18D4CDA300A7AF51 /* QBValidationConditionRuleTests.m in Sources */,
+				AAC4B16818D4C62500A7AF51 /* QBValidationComparisonRuleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAC4B0E118D47AC600A7AF51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAC4B0B918D47AC600A7AF51 /* QBValidatorDemo */;
+			targetProxy = AAC4B0E018D47AC600A7AF51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA4039BD18D5F4DB008C232A /* QBValidator.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA4039BE18D5F4DB008C232A /* en */,
+			);
+			name = QBValidator.strings;
+			sourceTree = "<group>";
+		};
+		AAC4B0C618D47AC600A7AF51 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAC4B0C718D47AC600A7AF51 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AAC4B0CF18D47AC600A7AF51 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAC4B0D018D47AC600A7AF51 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAC4B0E518D47AC700A7AF51 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAC4B0E618D47AC700A7AF51 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAC4B0EA18D47AC700A7AF51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AAC4B0EB18D47AC700A7AF51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAC4B0ED18D47AC700A7AF51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QBValidatorDemo/QBValidatorDemo-Prefix.pch";
+				INFOPLIST_FILE = "QBValidatorDemo/QBValidatorDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AAC4B0EE18D47AC700A7AF51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QBValidatorDemo/QBValidatorDemo-Prefix.pch";
+				INFOPLIST_FILE = "QBValidatorDemo/QBValidatorDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AAC4B0F018D47AC700A7AF51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QBValidatorDemo.app/QBValidatorDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QBValidatorDemo/QBValidatorDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "QBValidatorDemoTests/QBValidatorDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AAC4B0F118D47AC700A7AF51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QBValidatorDemo.app/QBValidatorDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QBValidatorDemo/QBValidatorDemo-Prefix.pch";
+				INFOPLIST_FILE = "QBValidatorDemoTests/QBValidatorDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAC4B0B518D47AC600A7AF51 /* Build configuration list for PBXProject "QBValidatorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC4B0EA18D47AC700A7AF51 /* Debug */,
+				AAC4B0EB18D47AC700A7AF51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAC4B0EC18D47AC700A7AF51 /* Build configuration list for PBXNativeTarget "QBValidatorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC4B0ED18D47AC700A7AF51 /* Debug */,
+				AAC4B0EE18D47AC700A7AF51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAC4B0EF18D47AC700A7AF51 /* Build configuration list for PBXNativeTarget "QBValidatorDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC4B0F018D47AC700A7AF51 /* Debug */,
+				AAC4B0F118D47AC700A7AF51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAC4B0B218D47AC600A7AF51 /* Project object */;
+}

@@ -1,0 +1,46 @@
+/* 
+  QBValidator.strings
+  QBValidatorDemo
+
+  Created by Tanaka Katsuma on 2014/03/16.
+  Copyright (c) 2014年 Katsuma Tanaka. All rights reserved.
+*/
+
+// QBValidationRequirementRule
+"QBValidationRequirementRuleSatisfied"    = "{name} is required.";
+"QBValidationRequirementRuleNotSatisfied" = "{name} is not required.";
+
+// QBValidationComparisonRule
+"QBValidationComparisonRuleEqualSatisfied"    = "Value for {name} must be equal to {rule.value}.";
+"QBValidationComparisonRuleEqualNotSatisfied" = "Value for {name} must not be equal to {rule.value}.";
+
+"QBValidationComparisonRuleGreaterThanSatisfied"    = "Value for {name} must be greater than {rule.value}.";
+"QBValidationComparisonRuleGreaterThanNotSatisfied" = "Value for {name} must not be greater than {rule.value}.";
+
+"QBValidationComparisonRuleGreaterThanOrEqualSatisfied"    = "Value for {name} must be greater than or equal to {rule.value}.";
+"QBValidationComparisonRuleGreaterThanOrEqualNotSatisfied" = "Value for {name} must not be greater than or equal to {rule.value}.";
+
+"QBValidationComparisonRuleLessThanSatisfied"    = "Value for {name} must be less than {rule.value}.";
+"QBValidationComparisonRuleLessThanNotSatisfied" = "Value for {name} must not be less than {rule.value}.";
+
+"QBValidationComparisonRuleLessThanOrEqualSatisfied"    = "Value for {name} must be less than or equal to {rule.value}.";
+"QBValidationComparisonRuleLessThanOrEqualNotSatisfied" = "Value for {name} must not be less than or equal to {rule.value}.";
+
+// QBValidationRangeRule
+"QBValidationRangeRuleSatisfied"    = "Value for {name} must fall between {rule.minValue} and {rule.maxValue}.";
+"QBValidationRangeRuleNotSatisfied" = "Value for {name} must not fall between {rule.minValue} and {rule.maxValue}.";
+
+// QBValidationContainmentRule
+"QBValidationContainmentRuleSatisfied"    = "Value for {name} must be contained in {rule.preferredValues}.";
+"QBValidationContainmentRuleNotSatisfied" = "Value for {name} must not be contained in {rule.preferredValues}.";
+
+// QBValidationRegularExpressionRule
+"QBValidationRegularExpressionRuleSatisfied"    = "Value for {name} must match to {rule.pattern}.";
+"QBValidationRegularExpressionRuleNotSatisfied" = "Value for {name} must not match to {rule.pattern}.";
+
+// QBValidationPatternRule
+"QBValidationPatternRuleEmailSatisfied"    = "Value for {name} must be a valid email.";
+"QBValidationPatternRuleEmailNotSatisfied" = "Value for {name} must not be a valid email.";
+
+"QBValidationPatternRuleURISatisfied"    = "Value for {name} must be a valid URI.";
+"QBValidationPatternRuleURINotSatisfied" = "Value for {name} must not be a valid URI.";
