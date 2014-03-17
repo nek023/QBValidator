@@ -24,12 +24,12 @@ A library for validating values easily.
                                                }
                                errorMessages:&errorMessages];
     
-    // This example will fail all tests.
-    // Let's change the values to pass :)
-    if (!isValid) {
-        NSLog(@"errorMessages: %@", errorMessages);
-    } else {
+    // This example will fail.
+    // Let's change the values to pass all tests :)
+    if (isValid) {
         NSLog(@"OK!");
+    } else {
+        NSLog(@"errorMessages: %@", errorMessages);
     }
 
 
