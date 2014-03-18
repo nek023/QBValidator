@@ -44,6 +44,7 @@
 		AAC4B16D18D4CDA300A7AF51 /* QBValidationConditionRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC4B16C18D4CDA300A7AF51 /* QBValidationConditionRuleTests.m */; };
 		AAC4B17218D57B0900A7AF51 /* QBValidationRegularExpressionRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC4B17118D57B0900A7AF51 /* QBValidationRegularExpressionRuleTests.m */; };
 		AAC6251C18D5EB0B009B6437 /* QBValidationPatternRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC6251B18D5EB0B009B6437 /* QBValidationPatternRuleTests.m */; };
+		AAE1EC4F18D89670000765E1 /* NestedRulesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE1EC4E18D89670000765E1 /* NestedRulesTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		AAC4B16C18D4CDA300A7AF51 /* QBValidationConditionRuleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationConditionRuleTests.m; sourceTree = "<group>"; };
 		AAC4B17118D57B0900A7AF51 /* QBValidationRegularExpressionRuleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationRegularExpressionRuleTests.m; sourceTree = "<group>"; };
 		AAC6251B18D5EB0B009B6437 /* QBValidationPatternRuleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationPatternRuleTests.m; sourceTree = "<group>"; };
+		AAE1EC4E18D89670000765E1 /* NestedRulesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NestedRulesTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +251,7 @@
 		AAC4B0E218D47AC600A7AF51 /* QBValidatorDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				AAE1EC4E18D89670000765E1 /* NestedRulesTests.m */,
 				AAC4B15818D4B0EA00A7AF51 /* QBValidationRequirementRuleTests.m */,
 				AAC4B16718D4C62500A7AF51 /* QBValidationComparisonRuleTests.m */,
 				AAC4B15E18D4BED800A7AF51 /* QBValidationRangeRuleTests.m */,
@@ -403,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE1EC4F18D89670000765E1 /* NestedRulesTests.m in Sources */,
 				AAC6251C18D5EB0B009B6437 /* QBValidationPatternRuleTests.m in Sources */,
 				AAC4B16318D4C09E00A7AF51 /* QBValidationNegativeRuleTests.m in Sources */,
 				AA643AB318D881880074BBE6 /* QBValidationInheritanceRuleTests.m in Sources */,

@@ -71,53 +71,82 @@
     BOOL valid = YES;
     NSMutableArray *errorMessages = [NSMutableArray array];
     
-    for (QBValidationRule *rule in rules) {
-        // TODO: Check if statement
-        if ([rule isMemberOfClass:[QBValidationConditionRule class]]) {
-            if ([rule validateValue:value]) {
-                NSDictionary *values = self.values;
-                NSMutableDictionary *originalErrorMessages = self.errorMessages;
-                
-                NSDictionary *conditionalRules = [(QBValidationConditionRule *)rule conditionalRules];
-                NSDictionary *subErrorMessages = nil;
-                
-                if (![self validateValues:values rules:conditionalRules errorMessages:&subErrorMessages]) {
-                    valid = NO;
+    for (id obj in rules) {
+        if ([obj isKindOfClass:[QBValidationRule class]]) {
+            QBValidationRule *rule = (QBValidationRule *)obj;
+            
+            if ([rule isMemberOfClass:[QBValidationConditionRule class]]) {
+                if ([rule validateValue:value]) {
+                    NSDictionary *values = self.values;
+                    NSMutableDictionary *originalErrorMessages = self.errorMessages;
                     
-                    if (subErrorMessages) {
-                        for (id key in [subErrorMessages allKeys]) {
-                            if ([key isEqual:name]) {
-                                [errorMessages addObjectsFromArray:subErrorMessages[key]];
-                            } else {
-                                NSArray *array = originalErrorMessages[key];
-                                
-                                if (array) {
-                                    NSMutableArray *mutableArray = [NSMutableArray arrayWithArray:array];
-                                    [mutableArray addObjectsFromArray:subErrorMessages[key]];
-                                    
-                                    originalErrorMessages[key] = [mutableArray copy];
+                    NSDictionary *conditionalRules = [(QBValidationConditionRule *)rule conditionalRules];
+                    NSDictionary *subErrorMessages = nil;
+                    
+                    if (![self validateValues:values rules:conditionalRules errorMessages:&subErrorMessages]) {
+                        valid = NO;
+                        
+                        if (subErrorMessages) {
+                            for (id key in [subErrorMessages allKeys]) {
+                                if ([key isEqual:name]) {
+                                    [errorMessages addObjectsFromArray:subErrorMessages[key]];
                                 } else {
-                                    originalErrorMessages[key] = subErrorMessages[key];
+                                    NSArray *array = originalErrorMessages[key];
+                                    
+                                    if (array) {
+                                        NSMutableArray *mutableArray = [NSMutableArray arrayWithArray:array];
+                                        [mutableArray addObjectsFromArray:subErrorMessages[key]];
+                                        
+                                        originalErrorMessages[key] = [mutableArray copy];
+                                    } else {
+                                        originalErrorMessages[key] = subErrorMessages[key];
+                                    }
                                 }
                             }
                         }
                     }
+                    
+                    self.errorMessages = originalErrorMessages;
                 }
-                
-                self.errorMessages = originalErrorMessages;
+            }
+            else {
+                if (![rule validateValue:value]) {
+                    valid = NO;
+                    
+                    // Generate error message
+                    NSString *errorMessage = [self errorMessageForRule:rule name:name value:value];
+                    
+                    if (errorMessage) {
+                        [errorMessages addObject:errorMessage];
+                    }
+                }
             }
         }
-        else {
-            if (![rule validateValue:value]) {
+        else if ([obj isKindOfClass:[NSDictionary class]] && [value isKindOfClass:[NSDictionary class]]) {
+            NSMutableDictionary *originalErrorMessages = self.errorMessages;
+            
+            // Validate sub values
+            NSDictionary *subValues = (NSDictionary *)value;
+            NSDictionary *subRules = (NSDictionary *)obj;
+            NSDictionary *subErrorMessages = nil;
+            if (![self validateValues:subValues rules:subRules errorMessages:&subErrorMessages]) {
                 valid = NO;
+            }
+            
+            if (subErrorMessages) {
+                NSArray *array = originalErrorMessages[name];
                 
-                // Generate error message
-                NSString *errorMessage = [self errorMessageForRule:rule name:name value:value];
-                
-                if (errorMessage) {
-                    [errorMessages addObject:errorMessage];
+                if (array) {
+                    NSMutableArray *mutableArray = [NSMutableArray arrayWithArray:array];
+                    [mutableArray addObject:subErrorMessages];
+                    
+                    originalErrorMessages[name] = [mutableArray copy];
+                } else {
+                    originalErrorMessages[name] = @[subErrorMessages];
                 }
             }
+            
+            self.errorMessages = originalErrorMessages;
         }
     }
     
