@@ -17,6 +17,7 @@
 #import "QBValidationConditionRule.h"
 #import "QBValidationRegularExpressionRule.h"
 #import "QBValidationPatternRule.h"
+#import "QBValidationBlockRule.h"
 
 // Macros
 #define QBV_OVERLOADABLE static inline __attribute__((overloadable))
@@ -78,4 +79,9 @@ QBV_OVERLOADABLE id QBVIf(QBValidationRule *rule, NSDictionary *conditionalRules
 QBV_OVERLOADABLE id QBVMatch(NSString *pattern)
 {
     return [QBValidationRegularExpressionRule ruleWithPattern:pattern];
+}
+
+QBV_OVERLOADABLE id QBVBlock(BOOL (^block)(id value))
+{
+    return [QBValidationBlockRule ruleWithBlock:block];
 }

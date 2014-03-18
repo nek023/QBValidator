@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA27E1CC18D8338400CF6EEB /* QBValidationBlockRule.m in Sources */ = {isa = PBXBuildFile; fileRef = AA27E1CB18D8338400CF6EEB /* QBValidationBlockRule.m */; };
+		AA27E1CE18D8358100CF6EEB /* QBValidationBlockRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA27E1CD18D8358100CF6EEB /* QBValidationBlockRuleTests.m */; };
 		AA4039C118D5F4DB008C232A /* QBValidationComparisonRule.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4039A818D5F4DB008C232A /* QBValidationComparisonRule.m */; };
 		AA4039C218D5F4DB008C232A /* QBValidationConditionRule.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4039AA18D5F4DB008C232A /* QBValidationConditionRule.m */; };
 		AA4039C318D5F4DB008C232A /* QBValidationContainmentRule.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4039AC18D5F4DB008C232A /* QBValidationContainmentRule.m */; };
@@ -53,6 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA27E1CA18D8338400CF6EEB /* QBValidationBlockRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBValidationBlockRule.h; sourceTree = "<group>"; };
+		AA27E1CB18D8338400CF6EEB /* QBValidationBlockRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationBlockRule.m; sourceTree = "<group>"; };
+		AA27E1CD18D8358100CF6EEB /* QBValidationBlockRuleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationBlockRuleTests.m; sourceTree = "<group>"; };
 		AA4039A718D5F4DB008C232A /* QBValidationComparisonRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBValidationComparisonRule.h; sourceTree = "<group>"; };
 		AA4039A818D5F4DB008C232A /* QBValidationComparisonRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationComparisonRule.m; sourceTree = "<group>"; };
 		AA4039A918D5F4DB008C232A /* QBValidationConditionRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBValidationConditionRule.h; sourceTree = "<group>"; };
@@ -173,6 +178,8 @@
 				AA4039B418D5F4DB008C232A /* QBValidationRegularExpressionRule.m */,
 				AA4039AF18D5F4DB008C232A /* QBValidationPatternRule.h */,
 				AA4039B018D5F4DB008C232A /* QBValidationPatternRule.m */,
+				AA27E1CA18D8338400CF6EEB /* QBValidationBlockRule.h */,
+				AA27E1CB18D8338400CF6EEB /* QBValidationBlockRule.m */,
 			);
 			name = ValidationRules;
 			sourceTree = "<group>";
@@ -243,6 +250,7 @@
 				AAC4B16C18D4CDA300A7AF51 /* QBValidationConditionRuleTests.m */,
 				AAC4B17118D57B0900A7AF51 /* QBValidationRegularExpressionRuleTests.m */,
 				AAC6251B18D5EB0B009B6437 /* QBValidationPatternRuleTests.m */,
+				AA27E1CD18D8358100CF6EEB /* QBValidationBlockRuleTests.m */,
 				AAC4B0E318D47AC600A7AF51 /* Supporting Files */,
 			);
 			path = QBValidatorDemoTests;
@@ -368,6 +376,7 @@
 				AA4039C118D5F4DB008C232A /* QBValidationComparisonRule.m in Sources */,
 				AA4039C218D5F4DB008C232A /* QBValidationConditionRule.m in Sources */,
 				AA4039C918D5F4DB008C232A /* QBValidationRule.m in Sources */,
+				AA27E1CC18D8338400CF6EEB /* QBValidationBlockRule.m in Sources */,
 				AA4039C818D5F4DB008C232A /* QBValidationRequirementRule.m in Sources */,
 				AA4039C618D5F4DB008C232A /* QBValidationRangeRule.m in Sources */,
 				AA4039C318D5F4DB008C232A /* QBValidationContainmentRule.m in Sources */,
@@ -388,6 +397,7 @@
 				AAC6251C18D5EB0B009B6437 /* QBValidationPatternRuleTests.m in Sources */,
 				AAC4B16318D4C09E00A7AF51 /* QBValidationNegativeRuleTests.m in Sources */,
 				AAC4B17218D57B0900A7AF51 /* QBValidationRegularExpressionRuleTests.m in Sources */,
+				AA27E1CE18D8358100CF6EEB /* QBValidationBlockRuleTests.m in Sources */,
 				AAC4B15F18D4BED800A7AF51 /* QBValidationRangeRuleTests.m in Sources */,
 				AAC4B15918D4B0EA00A7AF51 /* QBValidationRequirementRuleTests.m in Sources */,
 				AAC4B16118D4BF5F00A7AF51 /* QBValidationContainmentRuleTests.m in Sources */,
