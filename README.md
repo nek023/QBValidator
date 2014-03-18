@@ -3,6 +3,12 @@ A library for validating values easily.
 
 
 ## Example
+The most simple way is using `validateValues:rules:errorMessages:` of `QBValidator`.  
+`values` is the pairs of key and value, `rules` is the pairs of key and rule array.
+
+This example will fail.
+Let's change the values to pass all tests :)
+
     QBValidator *validator = [QBValidator validator];
     
     NSDictionary *errorMessages = nil;
@@ -24,13 +30,13 @@ A library for validating values easily.
                                                }
                                errorMessages:&errorMessages];
     
-    // This example will fail.
-    // Let's change the values to pass all tests :)
     if (isValid) {
         NSLog(@"OK!");
     } else {
         NSLog(@"errorMessages: %@", errorMessages);
     }
+
+Another way is combining with `UITextField`, explained below.
 
 
 ## Combine with forms
