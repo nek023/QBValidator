@@ -21,6 +21,8 @@
 		AA4039CA18D5F4DB008C232A /* QBValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4039BB18D5F4DB008C232A /* QBValidator.m */; };
 		AA4039CB18D5F4DB008C232A /* QBValidator.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA4039BD18D5F4DB008C232A /* QBValidator.strings */; };
 		AA4039CC18D5F4DB008C232A /* UITextField+QBValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4039C018D5F4DB008C232A /* UITextField+QBValidator.m */; };
+		AA643AB118D870460074BBE6 /* QBValidationInheritanceRule.m in Sources */ = {isa = PBXBuildFile; fileRef = AA643AB018D870460074BBE6 /* QBValidationInheritanceRule.m */; };
+		AA643AB318D881880074BBE6 /* QBValidationInheritanceRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA643AB218D881880074BBE6 /* QBValidationInheritanceRuleTests.m */; };
 		AAC4B0BE18D47AC600A7AF51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC4B0BD18D47AC600A7AF51 /* Foundation.framework */; };
 		AAC4B0C018D47AC600A7AF51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC4B0BF18D47AC600A7AF51 /* CoreGraphics.framework */; };
 		AAC4B0C218D47AC600A7AF51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC4B0C118D47AC600A7AF51 /* UIKit.framework */; };
@@ -82,6 +84,9 @@
 		AA4039BE18D5F4DB008C232A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/QBValidator.strings; sourceTree = "<group>"; };
 		AA4039BF18D5F4DB008C232A /* UITextField+QBValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+QBValidator.h"; sourceTree = "<group>"; };
 		AA4039C018D5F4DB008C232A /* UITextField+QBValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+QBValidator.m"; sourceTree = "<group>"; };
+		AA643AAF18D870460074BBE6 /* QBValidationInheritanceRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBValidationInheritanceRule.h; sourceTree = "<group>"; };
+		AA643AB018D870460074BBE6 /* QBValidationInheritanceRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationInheritanceRule.m; sourceTree = "<group>"; };
+		AA643AB218D881880074BBE6 /* QBValidationInheritanceRuleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBValidationInheritanceRuleTests.m; sourceTree = "<group>"; };
 		AAC4B0BA18D47AC600A7AF51 /* QBValidatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBValidatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC4B0BD18D47AC600A7AF51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AAC4B0BF18D47AC600A7AF51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -180,6 +185,8 @@
 				AA4039B018D5F4DB008C232A /* QBValidationPatternRule.m */,
 				AA27E1CA18D8338400CF6EEB /* QBValidationBlockRule.h */,
 				AA27E1CB18D8338400CF6EEB /* QBValidationBlockRule.m */,
+				AA643AAF18D870460074BBE6 /* QBValidationInheritanceRule.h */,
+				AA643AB018D870460074BBE6 /* QBValidationInheritanceRule.m */,
 			);
 			name = ValidationRules;
 			sourceTree = "<group>";
@@ -251,6 +258,7 @@
 				AAC4B17118D57B0900A7AF51 /* QBValidationRegularExpressionRuleTests.m */,
 				AAC6251B18D5EB0B009B6437 /* QBValidationPatternRuleTests.m */,
 				AA27E1CD18D8358100CF6EEB /* QBValidationBlockRuleTests.m */,
+				AA643AB218D881880074BBE6 /* QBValidationInheritanceRuleTests.m */,
 				AAC4B0E318D47AC600A7AF51 /* Supporting Files */,
 			);
 			path = QBValidatorDemoTests;
@@ -380,6 +388,7 @@
 				AA4039C818D5F4DB008C232A /* QBValidationRequirementRule.m in Sources */,
 				AA4039C618D5F4DB008C232A /* QBValidationRangeRule.m in Sources */,
 				AA4039C318D5F4DB008C232A /* QBValidationContainmentRule.m in Sources */,
+				AA643AB118D870460074BBE6 /* QBValidationInheritanceRule.m in Sources */,
 				AA4039CC18D5F4DB008C232A /* UITextField+QBValidator.m in Sources */,
 				AAC4B0D418D47AC600A7AF51 /* ViewController.m in Sources */,
 				AA4039CA18D5F4DB008C232A /* QBValidator.m in Sources */,
@@ -396,6 +405,7 @@
 			files = (
 				AAC6251C18D5EB0B009B6437 /* QBValidationPatternRuleTests.m in Sources */,
 				AAC4B16318D4C09E00A7AF51 /* QBValidationNegativeRuleTests.m in Sources */,
+				AA643AB318D881880074BBE6 /* QBValidationInheritanceRuleTests.m in Sources */,
 				AAC4B17218D57B0900A7AF51 /* QBValidationRegularExpressionRuleTests.m in Sources */,
 				AA27E1CE18D8358100CF6EEB /* QBValidationBlockRuleTests.m in Sources */,
 				AAC4B15F18D4BED800A7AF51 /* QBValidationRangeRuleTests.m in Sources */,

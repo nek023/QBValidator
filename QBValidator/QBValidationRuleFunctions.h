@@ -18,6 +18,7 @@
 #import "QBValidationRegularExpressionRule.h"
 #import "QBValidationPatternRule.h"
 #import "QBValidationBlockRule.h"
+#import "QBValidationInheritanceRule.h"
 
 // Macros
 #define QBV_OVERLOADABLE static inline __attribute__((overloadable))
@@ -84,4 +85,19 @@ QBV_OVERLOADABLE id QBVMatch(NSString *pattern)
 QBV_OVERLOADABLE id QBVBlock(BOOL (^block)(id value))
 {
     return [QBValidationBlockRule ruleWithBlock:block];
+}
+
+QBV_OVERLOADABLE id QBVKindOfClass(Class class)
+{
+    return [QBValidationInheritanceRule ruleWithClass:class type:QBValidationInheritanceTypeKindOfClass];
+}
+
+QBV_OVERLOADABLE id QBVMemberOfClass(Class class)
+{
+    return [QBValidationInheritanceRule ruleWithClass:class type:QBValidationInheritanceTypeMemberOfClass];
+}
+
+QBV_OVERLOADABLE id QBVSubclassOfClass(Class class)
+{
+    return [QBValidationInheritanceRule ruleWithClass:class type:QBValidationInheritanceTypeSubclassOfClass];
 }
