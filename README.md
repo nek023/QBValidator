@@ -6,7 +6,7 @@ A library for validating values easily.
 The most simple way is using `validateValues:rules:errorMessages:` of `QBValidator`.  
 `values` is the pairs of key and value, `rules` is the pairs of key and rule array.
 
-This example will fail.
+This example will fail.  
 Let's change the values to pass all tests :)
 
     QBValidator *validator = [QBValidator validator];
