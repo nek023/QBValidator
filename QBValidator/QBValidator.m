@@ -71,6 +71,12 @@
     BOOL valid = YES;
     NSMutableArray *errorMessages = [NSMutableArray array];
     
+    // Allows to pass QBValidationRule or NSDictionary as rules if there is only one rule.
+    if ([rules isKindOfClass:[QBValidationRule class]] || [rules isKindOfClass:[NSDictionary class]]) {
+        rules = @[rules];
+    }
+    
+    // Validate
     for (id obj in rules) {
         if ([obj isKindOfClass:[QBValidationRule class]]) {
             QBValidationRule *rule = (QBValidationRule *)obj;

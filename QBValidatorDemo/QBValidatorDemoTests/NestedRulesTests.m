@@ -88,4 +88,29 @@
     XCTAssertTrue(subsubkey1ErrorMessages.count == 1);
 }
 
+- (void)testOmission
+{
+    NSDictionary *errorMessages = nil;
+    BOOL result = [self.validator validateValues:@{
+                                                   @"key1": @{
+                                                           @"subkey1": @"subvalue1",
+                                                           @"subkey2": @{
+                                                                   @"subsubkey1": @"subsubvalue1"
+                                                                   }
+                                                           }
+                                                   }
+                                           rules:@{
+                                                   @"key1": @{
+                                                           @"subkey1": QBVEqualTo(@"subvalue1"),
+                                                           @"subkey2": @{
+                                                                   @"subsubkey1": @[QBVEqualTo(@"subsubvalue1")]
+                                                                   }
+                                                           }
+                                                   }
+                                   errorMessages:&errorMessages];
+    
+    XCTAssertTrue(result, @"The result must be valid.");
+    XCTAssertTrue(errorMessages.count == 0, @"No errors must be occured.");
+}
+
 @end
