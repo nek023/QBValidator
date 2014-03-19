@@ -94,5 +94,39 @@ QBValidator can be installed via CocoaPods.
 If you want to install manually, download this repository and copy files in QBValidator directory to your project.
 
 
+## Tips
+### Rule must be an array
+**Note that rule must be an array.**  
+For example:
+
+    NSDictionary *rules = @{
+    	@"key": @[QBVEqualTo(@"value")]
+    };
+
+**But you can omit array literals when there is only one rule.**  
+For example:
+
+    NSDictionary *rules = @{
+    	@"key": QBVEqualTo(@"value") // This works.
+    };
+    
+### Nesting Rules
+If you want to validate complex data like `NSDictionary`, you can nest the rules.  
+For example: (omitted array literals)
+
+    [validator validateValues:@{
+                                @"key1": @"value1",
+                                @"key2": @{
+                                    @"subkey1": @"subvalue1"
+                                }
+                        rules:@{
+                                @"key1": QBVEqualTo(@"value1"),
+                                @"key2": @{
+                                    @"subkey1": QBVEqualTo(@"subvalue1")
+                                }
+                errorMessages:NULL];
+
+
+
 ## License
 *QBValidator* is released under the **MIT License**, see *LICENSE.txt*.
