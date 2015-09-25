@@ -186,7 +186,13 @@
             }
             key = [key stringByAppendingString:@"Satisfied"];
             
-            NSString *errorMessage = NSLocalizedStringFromTable(key, [rule localizationTableName], nil);
+            // First check bundleForClass:
+            // This will ensure that we work if packaged in a framework
+            NSString *errorMessage = NSLocalizedStringFromTableInBundle(key, [rule localizationTableName], [NSBundle bundleForClass:[self class]], nil);
+            if ([errorMessage isEqualToString:key]) {
+                // Fall back to main bundle
+                errorMessage = NSLocalizedStringFromTableInBundle(key, [rule localizationTableName], [NSBundle mainBundle], nil);
+            }
             
             // Replace patterns
             errorMessage = [errorMessage stringByReplacingOccurrencesOfString:@"{name}"
