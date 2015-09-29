@@ -10,8 +10,8 @@
 
 @interface QBValidationRangeRule : QBValidationRule
 
-@property (nonatomic, assign, readonly) NSNumber *minValue;
-@property (nonatomic, assign, readonly) NSNumber *maxValue;
+@property (nonatomic, copy, readonly) NSNumber *minValue;
+@property (nonatomic, copy, readonly) NSNumber *maxValue;
 @property (nonatomic, assign, readonly) BOOL inclusive;
 
 + (instancetype)ruleWithMinValue:(NSNumber *)minValue maxValue:(NSNumber *)maxValue inclusive:(BOOL)inclusive;
